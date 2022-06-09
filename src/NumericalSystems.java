@@ -1,6 +1,18 @@
+import javax.swing.*;
+
 public class NumericalSystems {
     public static void main(String[] args) {
-        int decimalNumber = 123;
+        String stringNumber = JOptionPane.showInputDialog(null, "Enter a number");
+
+        int decimalNumber = 0;
+        try {
+            decimalNumber = Integer.parseInt(stringNumber);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+            main(args);
+            System.exit(0);
+        }
+
         System.out.println("decimalNumber = " + decimalNumber);
 
         System.out.println("binary number = " + Integer.toBinaryString(decimalNumber));
@@ -17,5 +29,12 @@ public class NumericalSystems {
 
         int hexadecimalNumber = 0x7b;
         System.out.println("hexadecimalNumber = " + hexadecimalNumber);
+
+
+        String msgBinary = "Binary number: " + Integer.toBinaryString(decimalNumber);
+        String msgOctal = "Octal number: " + Integer.toOctalString(decimalNumber);
+        String msgHexadecimal = "Hexadecimal number: " + Integer.toHexString(decimalNumber);
+
+        JOptionPane.showMessageDialog(null, msgBinary + "\n" + msgOctal + "\n" + msgHexadecimal);
     }
 }

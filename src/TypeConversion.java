@@ -24,8 +24,21 @@ public class TypeConversion {
         double otherDoubleNumber = 1.455456;
         String otherDoubleString = Double.toString(otherDoubleNumber);
         System.out.println("otherDoubleString = " + otherDoubleString);
-        
+
         otherDoubleString = String.valueOf(otherDoubleNumber);
         System.out.println("otherDoubleString = " + otherDoubleString);
+
+        int i = 32768;
+        short s = (short) i;
+        System.out.println("s = " + s);
+        long l = i;
+        System.out.println("l = " + l);
+        System.out.println(Short.MAX_VALUE);
+
+        char c = (char) i;
+        System.out.println("c = " + c);
+        
+        float f = (float) i;
+        System.out.println("f = " + f);
     }
 }

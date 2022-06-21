@@ -26,5 +26,28 @@ public class MethodsStringExample {
         System.out.println("name.substring(1) = " + name.substring(1));
         System.out.println("name.substring(6, 8) = " + name.substring(6, 8));
         System.out.println("name.substring(name.length() - 1) = " + name.substring(name.length() - 1));
+        
+        String sister = "Andrea";
+
+        System.out.println("sister.replace(\"a\", \"*\") = " + sister.replace("a", "*"));
+
+        System.out.println("sister.indexOf(\"d\") = " + sister.indexOf("d"));
+        
+        System.out.println("sister.lastIndexOf(\"a\") = " + sister.lastIndexOf("a"));
+
+        System.out.println("sister.indexOf(\"z\") = " + sister.indexOf("z"));
+
+        System.out.println("sister.contains(\"e\") = " + sister.contains("e"));
+        System.out.println("sister.contains(\"No dreo\") = " + sister.contains("No dreo"));
+
+
+        System.out.println("sister.startsWith(\"A\") = " + sister.startsWith("A"));
+        System.out.println("sister.startsWith(\"TRaba\") = " + sister.startsWith("TRaba"));
+
+        System.out.println("sister.endsWith(\"drea\") = " + sister.endsWith("drea"));
+        System.out.println("sister.endsWith(\"vilchez\") = " + sister.endsWith("vilchez"));
+
+        System.out.println(" Andrea ");
+        System.out.println(" Andrea ".trim());
     }
 }

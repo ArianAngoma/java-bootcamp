@@ -1,4 +1,4 @@
-public class MethodsStringExample {
+public class StringMethodsExample {
     public static void main(String[] args) {
         String name = "Arian Angoma";
 

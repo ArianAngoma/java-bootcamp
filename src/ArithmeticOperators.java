@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class ArithmeticOperator {
+public class ArithmeticOperators {
     public static void main(String[] args) {
         int i = 5, j = 4, sum = i + j;
 
